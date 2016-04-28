@@ -17,6 +17,9 @@
   "bugs": {
     "url": "https://github.com/passport/express-4.x-local-example/issues"
   },
+  "scripts": {
+    "dev": "node server.js"
+  },
   "dependencies": {
     "body-parser": "^1.13.3",
     "connect-ensure-login": "^0.1.1",
