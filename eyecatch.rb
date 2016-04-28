@@ -13,6 +13,7 @@ state(:jack) {
     fill_in 'password', with: 'secret'
     click_button 'Submit'
   }
+  root_path '/login'
 }
 
 state(:jill) {
@@ -21,4 +22,5 @@ state(:jill) {
     fill_in 'password', with: 'birthday'
     click_button 'Submit'
   }
+  root_path '/login'
 }
