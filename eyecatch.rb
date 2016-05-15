@@ -7,6 +7,10 @@ before_script {
 serve 'node server.js'
 port 3000
 
+state(:anonymous) {
+  root_path '/'
+}
+
 state(:jack) {
   before_access {
     fill_in 'username', with: 'jack'
