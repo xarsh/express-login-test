@@ -1,4 +1,4 @@
-window_width [320, 700, 1024]
+window_width [320, 700]
 
 before_script {
   run 'npm install'
