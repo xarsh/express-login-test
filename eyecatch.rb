@@ -8,7 +8,7 @@ serve 'node server.js'
 port 3000
 
 state(:anonymous) {
-  root_path '/'
+  entry_point '/'
 }
 
 state(:jack) {
@@ -17,7 +17,7 @@ state(:jack) {
     fill_in 'password', with: 'secret'
     click_button 'Submit'
   }
-  root_path '/login'
+  entry_point '/login'
 }
 
 state(:jill) {
@@ -26,5 +26,5 @@ state(:jill) {
     fill_in 'password', with: 'birthday'
     click_button 'Submit'
   }
-  root_path '/login'
+  entry_point '/login'
 }
