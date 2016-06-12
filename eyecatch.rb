@@ -12,7 +12,7 @@ state(:anonymous) {
 }
 
 state(:jack) {
-  before_access {
+  before_access ('/login') {
     fill_in 'username', with: 'jack'
     fill_in 'password', with: 'secret'
     click_button 'Submit'
@@ -21,7 +21,7 @@ state(:jack) {
 }
 
 state(:jill) {
-  before_access {
+  before_access ('/login') {
     fill_in 'username', with: 'jill'
     fill_in 'password', with: 'birthday'
     click_button 'Submit'
